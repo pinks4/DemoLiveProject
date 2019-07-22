@@ -17,6 +17,12 @@ public class HeadersSection {
 	@FindBy(linkText="Login")
 	public static WebElement LoginBtn;
 	
+	@FindBy(name="search")
+	public static WebElement searchField;
+	
+	@FindBy(css="button[class$='btn-lg']")
+	public static WebElement searchButton;
+	
 	public HeadersSection(){
 		PageFactory.initElements(Base.driver, this);
 		
