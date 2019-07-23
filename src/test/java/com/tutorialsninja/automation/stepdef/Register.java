@@ -2,11 +2,7 @@ package com.tutorialsninja.automation.stepdef;
 
 
 
-
-import java.util.Map;
-
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 import com.tutorialsninja.automation.base.Base;
 import com.tutorialsninja.automation.framework.Elements;

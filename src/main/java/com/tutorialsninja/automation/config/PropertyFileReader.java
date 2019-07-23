@@ -20,6 +20,12 @@ public class PropertyFileReader implements ConfigurationReader{
 			e.printStackTrace();
 		}
 	}
+	public String getUsername() {
+		return properties.getProperty("username");
+	}
+	public String getPassword() {
+		return properties.getProperty("password");
+	}
 
 	public String getUrl() {
 		return properties.getProperty("url");
@@ -31,6 +37,11 @@ public class PropertyFileReader implements ConfigurationReader{
 
 	public int getPageLoadTimeOut() {
 		return Integer.parseInt(properties.getProperty("PageLoadTimeOut"));
+	}
+	
+	public String getProduct() {
+		return properties.getProperty("product");
+		
 	}
 
 	

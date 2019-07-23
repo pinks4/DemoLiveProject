@@ -35,9 +35,19 @@ public class LoginPage {
 
 	public static void doLogin(String email,String password){
 		
-		Elements.TypeText(LoginPage.Username, email);
-		Elements.TypeText(LoginPage.Password, password);
-		Elements.click(LoginPage.LoginBtn);
+		Elements.TypeText(Username, email);
+		Elements.TypeText(Password, password);
+		Elements.click(LoginBtn);
+		
+		
+	}
+	//overloading method
+	
+public static void doLogin(){
+		
+		Elements.TypeText(Username, Base.reader.getUsername());
+		Elements.TypeText(Password, Base.reader.getPassword());
+		Elements.click(LoginBtn);
 		
 		
 	}
